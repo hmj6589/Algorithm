@@ -6,14 +6,8 @@ class Solution {
             
             int n = num_list[i];
             
-            while(true){
-                if(n%2==0){
-                    n=n/2;
-                } else if(n==1){
-                    break;
-                }else {
-                    n=(n-1)/2;
-                }
+            while(n!=1){
+                n=n/2;
                 
                 answer++;
             }
