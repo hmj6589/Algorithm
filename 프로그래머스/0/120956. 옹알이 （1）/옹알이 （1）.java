@@ -1,15 +1,13 @@
 class Solution {
     public int solution(String[] babbling) {
-        // 조카가 발음할 수 있는 문자열
         String[] list = {"aya", "ye", "woo", "ma"};
+        int answer = 0;
         
-        int result = 0;
-        
-        for (String a : babbling) {
-            for (String s:list) a = a.replace(s, " ");
-            if (a.replace(" ", "").isEmpty()) result++;
+        for(String a:babbling) {
+            for(String s:list) a=a.replace(s," ");
+            if (a.replace(" ","").isEmpty()) answer++;
         }
         
-        return result;
+        return answer;
     }
 }
